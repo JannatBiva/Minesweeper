@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <script src="script.js" type="module" defer></script>
+  <title>Minesweeper</title>
+</head>
+
+<body>
+  <h3 class="title">Minesweeper</h3>
+  <div class="subtext">
+
+    <button class="instruction-button">?</button>
+    Mines Left: <span data-mine-count></span>
+    <button id="refreshButton" class="refresh-button" onclick="refreshGame()">Refresh</button>
+    <label for="gridSize" id="gridSizeLabel">Grid Size:</label>
+    <select id="gridSize">
+      <option value="10">10x10</option>
+      <option value="12" selected>12x12</option>
+      <option value="14">14x14</option>
+    </select>
+  </div>
+  <div class="board-container">
+    <div class="board"></div>
+    <div class="message-box">
+      <div class="message-text"></div>
+      <img class="message-image" src="" alt="Result Image">
+    </div>
+  </div>
+  <div id="instruction-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeIcon">&times;</span>
+      <p>Game Instructions:</p>
+      <p>Welcome to Minesweeper! Here are the instructions:</p>
+      <ul>
+        <li>Click on a tile to reveal it.</li>
+        <li>Right-click or long-press on a tile to mark it as a mine.</li>
+        <li>A number on a tile indicates the number of mines adjacent to it.</li>
+        <li>Avoid clicking on mines, and mark them to win the game!</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

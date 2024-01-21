@@ -38,11 +38,22 @@ Enjoy the game!
 
 
 
-
-
+# Initialize a new Git repository
 git init
+
+# Add the README.md file to the staging area
 git add README.md
-git commit -m "first commit"
+
+# Make the initial commit
+git commit -m "First commit"
+
+# Create a new main branch
 git branch -M main
+
+# Add the remote origin (replace the URL with your repository URL)
 git remote add origin https://github.com/JannatBiva/Minesweeper.git
+
+# Push the changes to GitHub
 git push -u origin main
+
+
